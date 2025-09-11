@@ -21,7 +21,7 @@ function App() {
         <div className="content-area">
           {products.map((product) => (
             <ProductCard 
-              kay={product.id}
+              key={product.id}
               name={product.name}
               price={product.price}
               description={product.description}
