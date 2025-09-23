@@ -16,3 +16,32 @@
     font-size: 14px;
     color: #555;
 }
+
+.button-add-to-cart{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.button-add-to-cart:hover {
+    background-color: #218838;
+}
+
+.button-remove-to-cart{
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+.button-remove-to-cart:hover {
+    background-color: #c82333;
+}

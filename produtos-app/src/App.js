@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Sidebar from "./components/sidebar/Sidebar";
@@ -13,21 +13,43 @@ function App() {
     {id: 4, name: "Teclado Mecânico", price: 450, description: "Teclado mecânico RGB Gamer"}
   ]
 
+  const [cart, addToCart] = useState([]);
+
+  const handleProductSelect = (product) => {
+    addToCart(currentCart => [...currentCart, product]);
+  }
+
+  const handleRemoveFromCart = (productId) => {
+    addToCart(currentCart => {
+      const index = currentCart.findIndex(item => item.id === productId);
+      if (index === -1) return currentCart;
+      const newCart = [...currentCart];
+      newCart.splice(index, 1);
+      return newCart;
+    });
+  }
+
   return (
     <div className="app-container">
       <Header />
-      <div>
+      <div className="main-content">
         <Sidebar />
         <div className="content-area">
           {products.map((product) => (
             <ProductCard 
               key={product.id}
-              name={product.name}
-              price={product.price}
-              description={product.description}
+              product={product}
+              onAddToCart={handleProductSelect}
+              onRemoveToCart={handleRemoveFromCart}
             />
           ))}
         </div>
+        { cart.length > 0 &&(
+          <button className="cart-button">
+            Carrinho ({cart.length})
+          </button>
+        )}
+        {console.log(cart)}
       </div>
       <Footer />
     </div>
