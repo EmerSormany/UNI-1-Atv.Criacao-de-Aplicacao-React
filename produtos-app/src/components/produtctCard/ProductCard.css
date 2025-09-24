@@ -45,3 +45,56 @@
 .button-remove-to-cart:hover {
     background-color: #c82333;
 }
+
+.comment-button {
+    background-color: #4a90e2; /* azul leve */
+    color: #fff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: background 0.2s;
+}
+
+.comment-button:hover {
+    background-color: #357abd;
+}
+
+.edit-button {
+    background-color: #ffe066; /* amarelo */
+    color: #333;
+    border: 1px solid #e6c200;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.edit-button:hover {
+    background-color: #ffd700;
+}
+
+.delete-button {
+    background-color: #e74c3c; /* vermelho */
+    color: #fff;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+.comments-list {
+    margin-bottom: 12px;
+}
+
+.comment-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+}
