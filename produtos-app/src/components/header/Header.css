@@ -3,4 +3,31 @@
     color: white;
     padding: 20px;
     text-align: center;
+    display: flex;
+}
+
+.header-title {
+    flex-grow: 1;
+}
+
+.cart-button {
+  align-self: flex-start;
+  height: fit-content;   
+
+  margin-right: 5px;
+  margin-top: 20px; 
+  flex-shrink: 0; 
+
+  background-color: #00a545;
+  color: white;    
+  border: none;
+  padding: 5px 10px;   
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; 
+  font-weight: bold;
+}
+
+.cart-button:hover {
+  background-color: #008337;
 }

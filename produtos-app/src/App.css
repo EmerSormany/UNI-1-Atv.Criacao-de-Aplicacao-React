@@ -23,7 +23,7 @@ body {
   justify-content: center;
 }
 
-.cart-button {
+/* .cart-button {
   align-self: flex-start;
   height: fit-content;   
 
@@ -43,4 +43,4 @@ body {
 
 .cart-button:hover {
   background-color: #0056b3;
-}
+} */
