@@ -39,33 +39,6 @@ function ProductCard({product, onAddToCart, onRemoveToCart}) {
             setEditIndex(null);
         }
     };
-
-    // const [cart, addToCart] = useState([]);
-    
-    // const handleProductSelect = (product) => {
-    //     newValue()
-    //     // addToCart(cart.push(product)
-    //     //     (currentCart) => {
-    //     //     console.log('valor do carrinho atual: ',currentCart );
-    //     //     console.log('valor do produto a ser adicionado: ',product);
-    //     //     const x = [...currentCart, product]
-    //     //     console.log('valor após adicionar o produtos: ',x);
-    //     //     return x
-    //     // }
-    // // )
-    //     g = [...cart]
-    //     console.log('valor do carrinho: ',cart);
-    // }
-    
-    // const handleRemoveFromCart = (productId) => {
-    //     addToCart(currentCart => {
-    //     const index = currentCart.findIndex(item => item.id === productId);
-    //     if (index === -1) return currentCart;
-    //     const newCart = [...currentCart];
-    //     newCart.splice(index, 1);
-    //     return newCart;  
-    //     });
-    // }
     
     return (
         <div className="product-card">
