@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import "./ProductCard.css";
 import { global } from "../../App";
 
-function ProductCard({product, onAddToCart, onRemoveToCart}) {
+function ProductCard({product}) {
     const {name, price, description} = product;
     const { addNewProduct, removeProduct } = useContext(global)
 

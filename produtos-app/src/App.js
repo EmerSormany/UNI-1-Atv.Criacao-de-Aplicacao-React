@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 import Sidebar from "./components/sidebar/Sidebar";
 import ProductCard from "./components/produtctCard/ProductCard";
 import "./App.css";
+import SideBarRight from "./components/SideBarRight/SideBarRight";
 
 export const global = createContext();
 
@@ -55,6 +56,7 @@ function App() {
               />
           ))}
         </div>
+        <SideBarRight/>
       </div>
       <Footer />
     </div>
